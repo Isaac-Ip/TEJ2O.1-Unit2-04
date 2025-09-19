@@ -5,6 +5,13 @@
  * This program gets then shows the temperature.
 */
 
+// when button A is pressed, it shows the temperature
 input.onButtonPressed(Button.A, function() {
-    basic.showString("The temperature is " + input.temperature() + "C.")
+
+    // get the temperature
+    let temperature = input.temperature()
+
+    //show the temperature
+    basic.showString("The temperature is :" + temperature + "C.")
+    basic.showIcon(IconNames.Happy)
 })
