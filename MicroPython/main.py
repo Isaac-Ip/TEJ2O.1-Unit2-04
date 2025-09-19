@@ -8,4 +8,8 @@ This program gets and shows the temperature.
 from microbit import *
 
 
-display.scroll()
+while True:
+    if button_a.is_pressed():
+        temperature = temperature()
+        display.show("The temperature is:" + temperature + "C.")
+        display.show(Image.HAPPY)
