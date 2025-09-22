@@ -6,17 +6,17 @@
 */
 
 // variable
-let temp: number
+let temperatureInCelsius: number
+
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
 // when button A is pressed, it shows the temperature
 input.onButtonPressed(Button.A, function() {
-
     //show the temperature
     basic.showString("The temperature is :")
-    temp = input.temperature()
-    basic.showNumber(temp)
+    temperatureInCelsius = input.temperature()
+    basic.showNumber(temperatureInCelsius)
     basic.showString("C.")
     basic.showIcon(IconNames.Happy)
 })
