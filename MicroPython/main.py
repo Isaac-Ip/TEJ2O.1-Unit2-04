@@ -6,10 +6,13 @@ This program gets and shows the temperature.
 """
 
 from microbit import *
+import temperature
 
+display.clear()
+display.show(Image.HAPPY)
 
 while True:
     if button_a.is_pressed():
-        temperature = temperature()
-        display.show("The temperature is:" + temperature + "C.")
+        temperatureInCelsius = temperature()
+        display.show("The temperature is:" + temperatureInCelsius + "C.")
         display.show(Image.HAPPY)
